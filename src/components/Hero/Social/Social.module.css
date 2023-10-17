@@ -1,0 +1,104 @@
+.linkContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 15rem;
+	--link1-delay: calc(var(--delay) + 1s);
+	--link2-delay: calc(var(--delay) + 1.2s);
+}
+
+.link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	font-size: 3rem;
+	height: 3rem;
+	width: 3rem;
+	color: var(--text-font);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	transition: all 0.3s ease-in;
+	animation: letterEffect 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+	animation-fill-mode: both;
+}
+
+.link:first-child {
+	animation-delay: var(--link1-delay);
+}
+.link:last-child {
+	animation-delay: var(--link2-delay);
+}
+
+.linkRight {
+	composes: link;
+}
+
+.link:hover {
+	box-shadow: 1px 10px 10px -10px rgba(255, 50, 50, 0.5);
+	color: var(--secondary);
+}
+
+.link:after {
+	display: flex;
+	justify-content: center;
+	content: "GitHub";
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(100%, -50%);
+	font-size: 1rem;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 0;
+	transition: width 0.5s;
+}
+
+.linkRight:before {
+	display: flex;
+	justify-content: center;
+	content: "Linkedin";
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	transform: translate(0, -50%);
+	font-size: 1rem;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 0;
+	transition: width 0.5s;
+}
+
+.linkRight:after {
+	display: none;
+}
+
+.link:hover:after {
+	width: 6rem;
+}
+
+.linkRight:hover:before {
+	width: 6rem;
+}
+
+/* @keyframes zoomIn {
+	0% {
+		opacity: 0;
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+	50% {
+		opacity: 1;
+	}
+} */
+
+@keyframes letterEffect {
+	0% {
+		transform: scale(4) translate(0);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1) translate(0);
+		opacity: 1;
+	}
+}

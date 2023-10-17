@@ -1,0 +1,26 @@
+/* STICKY FOOTER */
+.gatsbySite {
+	min-height: calc(100vh - var(--navigation-height));
+	display: grid;
+	grid-template-columns:
+		[left-gutter-start] minmax(1rem, 1fr)
+		[left-gutter-end content-start] minmax(
+			0px,
+			var(--page-container-max-width)
+		)
+		[content-end right-gutter-start] minmax(1rem, 1fr) [right-gutter-end];
+}
+
+html {
+	background-color: var(--main-bg);
+	overflow-x: hidden;
+}
+
+*::selection {
+	background: var(--text-secondary);
+}
+
+main {
+	grid-column: content;
+	padding-bottom: calc(var(--navigation-height) + 2rem);
+}

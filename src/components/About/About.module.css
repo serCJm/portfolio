@@ -1,0 +1,24 @@
+.about {
+	position: relative;
+	padding: 6rem 0;
+	margin: 0 auto;
+	max-width: 65ch;
+}
+
+.about:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	width: 100vw;
+	min-height: 100%;
+	left: calc(50% - 50vw);
+	top: 0;
+	background: var(--about-bg);
+	clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 80%);
+}
+
+.text {
+	color: #fff;
+	max-width: var(--page-container-max-width);
+	margin: 0 auto;
+}

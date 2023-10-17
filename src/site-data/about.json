@@ -1,0 +1,88 @@
+[
+	{
+		"pageTitle": "About CJ Moro",
+		"pageKeywords": [
+			"cj moro",
+			"about",
+			"skills",
+			"react",
+			"javascript",
+			"js",
+			"html",
+			"css",
+			"font-end",
+			"web developer"
+		],
+		"description": "Find Out More Information About CJ Moro, Front-End Javascript/React Developer",
+		"about": "Hello! I'm a passionate web developer specializing in creating dynamic and visually compelling web applications. With a strong foundation in front-end and back-end technologies, my skill set includes Javascript/Typescript, React coupled with Redux, Gatsby, Sass, D3.js, Node.js, and MongoDB. I am deeply fascinated by the endless possibilities that visual technologies offer and am committed to crafting user-centric experiences. I pride myself on being a perpetual learner; my tech stack is ever-expanding as I strive to stay updated with the latest industry trends.",
+		"skills": [
+			{
+				"skill": "html",
+				"level": "advanced"
+			},
+			{
+				"skill": "css",
+				"level": "advanced"
+			},
+			{
+				"skill": "sass",
+				"level": "advanced"
+			},
+			{
+				"skill": "javascript",
+				"level": "advanced"
+			},
+			{
+				"skill": "typescript",
+				"level": "advanced"
+			},
+			{
+				"skill": "d3",
+				"level": "intermediate"
+			},
+			{
+				"skill": "git",
+				"level": "intermediate"
+			},
+			{
+				"skill": "node",
+				"level": "intermediate"
+			},
+			{
+				"skill": "mongodb",
+				"level": "intermediate"
+			},
+			{
+				"skill": "jest",
+				"level": "intermediate"
+			},
+			{
+				"skill": "gatsby",
+				"level": "intermediate"
+			},
+			{
+				"skill": "react",
+				"level": "advanced"
+			}
+		],
+		"qualities": [
+			{
+				"quality": "organized",
+				"text": "Starting with UX/UI and ending with my code, I strive to keep everything clean, easy to use, and intuitive."
+			},
+
+			{
+				"quality": "responsive",
+				"text": "My project are responsive and perform well on various screen types."
+			},
+			{
+				"quality": "efficient",
+				"text": "I develop fast, performant pages in a timely manner."
+			},
+			{
+				"quality": "Self Learner",
+				"text": "I'm a motivated fast learner. So I get around development obstacles by learning."
+			}
+		]
+	}
+]

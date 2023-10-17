@@ -1,0 +1,107 @@
+.container > svg {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+/* .svgContainer {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateZ(0);
+	transition: transform 0.2s ease-out;
+}
+
+.svgContainer:hover {
+	transform: scale(1.05);
+} */
+
+/* .svg {
+	--PI: 3.14159265358979;
+  --radius-double: calc(109 * 2);
+	--circumference: 565; because calc doesn't work on SVG attributes
+	--beginner: 424;
+	--itermediate: 283;
+	--advanced: 141;
+} */
+
+/* .circle {
+	stroke: var(--skill-stroke);
+	stroke-width: 30px;
+	fill: none;
+	stroke-dasharray: var(--circumference);
+	transform-origin: center;
+	transform: rotate(-90deg);
+}
+
+.circleBg {
+	composes: circle;
+	stroke: rgb(228, 228, 223);
+}
+
+.level {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: var(--text-font);
+	text-transform: uppercase;
+}
+
+.description {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.advanced {
+	composes: circle;
+	animation: advanced 1s linear;
+	animation-fill-mode: both;
+}
+
+.intermediate {
+	composes: circle;
+	animation: intermediate 1s linear;
+	animation-fill-mode: both;
+}
+
+.beginner {
+	composes: circle;
+	animation: beginner 1s linear;
+	animation-fill-mode: both;
+}
+
+@keyframes advanced {
+	from {
+		opacity: 0;
+		stroke-dashoffset: var(--circumference);
+	}
+	to {
+		opacity: 1;
+		stroke-dashoffset: var(--advanced);
+	}
+}
+
+@keyframes intermediate {
+	from {
+		opacity: 0;
+		stroke-dashoffset: var(--circumference);
+	}
+	to {
+		opacity: 1;
+		stroke-dashoffset: var(--itermediate);
+	}
+}
+
+@keyframes beginner {
+	from {
+		opacity: 0;
+		stroke-dashoffset: var(--circumference);
+	}
+	to {
+		opacity: 1;
+		stroke-dashoffset: var(--beginner);
+	}
+} */

@@ -1,0 +1,33 @@
+/*COLORS*/
+html {
+	/* COLORS */
+	--main-bg: #484848;
+	--text-primary: white;
+	--text-secondary: #ff3232;
+	/* NAVIGATION */
+	/* --navigation-bg: rgb(25, 100, 210); */
+	--navigation-bg: var(--main-bg);
+	--navigation-text: rgb(255, 255, 255);
+	--navigation-underline: rgb(255, 50, 50);
+	/* HERO */
+	--secondary: rgb(255, 50, 50);
+	--hero-font: white;
+	--hero-font2: white;
+	--page-title: rgb(39, 71, 201);
+	--btn-primary: rgb(39, 71, 201);
+	--btn-secondary: rgb(40, 137, 232);
+	--about-bg: white;
+	--skill-stroke: rgb(55, 156, 214);
+	--qualities-bg: rgb(55, 156, 214);
+	--title-font: rgb(94, 145, 191);
+	--text-font: white;
+	--contact-form-border: rgb(39, 71, 201);
+	--contact-form-bg: rgb(255, 215, 215);
+	/* ANIMATION - HOME PAGE */
+	--delay: 1s;
+}
+/*UNITS*/
+html {
+	--navigation-height: 4rem;
+	--page-container-max-width: 900px;
+}

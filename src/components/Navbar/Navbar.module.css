@@ -1,0 +1,29 @@
+.overlay {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: var(--navigation-height);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--navigation-bg);
+	z-index: 20;
+}
+
+.navbar {
+	position: relative;
+	z-index: 5;
+	background: var(--navigation-bg);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 2rem;
+}
+
+@media only screen and (min-width: 749px) {
+	.navbar {
+		display: none;
+	}
+}

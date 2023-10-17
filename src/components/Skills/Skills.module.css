@@ -1,0 +1,27 @@
+.skillsContainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 1rem;
+}
+
+.skillsContainer > div {
+	background: white;
+	padding: 3rem;
+	display: grid;
+	transition: all 0.3 ease-in;
+}
+
+.skillsContainer > div:hover {
+	transform: scale(1.1);
+}
+
+.skillsContainer > div::before {
+	content: "";
+	padding-bottom: 100%;
+	display: block;
+}
+
+.skillsContainer > div::before,
+.skillsContainer > div > svg {
+	grid-area: 1 / 1 / 2 / 2;
+}

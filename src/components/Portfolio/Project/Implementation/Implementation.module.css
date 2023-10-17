@@ -1,0 +1,67 @@
+.implementationHide {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	background: var(--main-bg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	top: 100%;
+	transform: translateY(0);
+	transition: all 0.5s;
+	color: var(--text-primary);
+}
+
+.implementationShow {
+	composes: implementationHide;
+	transform: translateY(-100%);
+}
+
+.titleContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+}
+
+.title {
+	margin: 0;
+	color: var(--text-secondary);
+}
+
+.btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+	color: var(--text-secondary);
+}
+
+.btnClose {
+	composes: btn;
+	margin-left: auto;
+	font-size: 2rem;
+	padding-right: 0;
+	color: var(--text-primary);
+	outline: var(--text-secondary);
+}
+
+.contentContainer {
+	display: grid;
+}
+
+.list {
+	margin: 0 0 0.5rem 1rem;
+}
+
+.list li {
+	margin-bottom: 0;
+}

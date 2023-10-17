@@ -1,0 +1,56 @@
+.link {
+	display: none;
+}
+
+@media only screen and (min-width: 750px) {
+	.container {
+		position: relative;
+	}
+
+	.image {
+		transition: opacity 0.2s;
+	}
+
+	.container:hover .image {
+		opacity: 0.1;
+	}
+
+	.link {
+		display: block;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translate(0, -50%);
+		padding: 1rem 2rem;
+		border: 3px solid var(--text-secondary);
+		color: var(--text-secondary);
+		opacity: 0;
+		transition: all 0.4s;
+		text-transform: uppercase;
+	}
+
+	.linkAlt {
+		composes: link;
+		left: 0;
+		right: auto;
+		transform: translate(0, -50%);
+	}
+
+	.link:hover {
+		background: var(--text-secondary);
+		color: var(--text-primary);
+	}
+
+	.container:hover .link {
+		opacity: 1;
+		right: 50%;
+		transform: translate(50%, -50%);
+	}
+
+	.container:hover .linkAlt {
+		opacity: 1;
+		left: 50%;
+		right: auto;
+		transform: translate(-50%, -50%);
+	}
+}

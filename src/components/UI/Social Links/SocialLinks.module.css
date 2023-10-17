@@ -1,0 +1,71 @@
+.linkContainer {
+	justify-self: center;
+	display: flex;
+	width: 100%;
+	max-width: 20rem;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+}
+
+.link {
+	display: block;
+	position: relative;
+	padding: 0 1rem;
+	font-size: 1.5rem;
+	color: var(--text-primary);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	transition: box-shadow 0.3s;
+}
+
+.linkRight {
+	composes: link;
+}
+
+.link:hover {
+	color: var(--text-secondary);
+	box-shadow: 1px 10px 10px -10px rgba(250, 50, 50, 0.5);
+}
+
+.link:after {
+	display: flex;
+	justify-content: center;
+	content: "view source";
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(100%, -50%);
+	font-size: 1rem;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 0;
+	transition: width 0.5s;
+}
+
+.linkRight:before {
+	display: flex;
+	justify-content: center;
+	content: "visit site";
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	transform: translate(0, -50%);
+	font-size: 1rem;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 0;
+	transition: width 0.5s;
+}
+
+.linkRight:after {
+	display: none;
+}
+
+.link:hover:after {
+	width: 7rem;
+}
+
+.linkRight:hover:before {
+	width: 6rem;
+}

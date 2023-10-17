@@ -1,0 +1,7 @@
+.pageTitle {
+	justify-self: start;
+	grid-row: title;
+	margin: 8rem 0 5rem;
+	color: var(--text-secondary);
+	text-decoration: underline;
+}

@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  height: var(--navigation-height);
+  background: var(--navigation-bg);
+  color: rgb(91, 102, 108);
+}
+
+.link {
+  color: var(--btn-primary);
+  font-weight: bold;
+}
+
+.link:hover {
+  color: var(--btn-secondary);
+}

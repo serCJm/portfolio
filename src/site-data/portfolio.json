@@ -1,0 +1,76 @@
+[
+	{
+		"pageTitle": "CJ Moro Portfolio",
+		"pageKeywords": [
+			"cj moro",
+			"portfolio",
+			"projects",
+			"recruiterra",
+			"react admin dashboard",
+			"webstore compare",
+			"crypto price checker"
+		],
+		"description": "Check Out CJ Moro MERN Full Stack And Front End Projects Along With Github And Project Website Links.",
+		"projects": [
+			{
+				"title": "Recruiterra",
+				"description": "Recruiterra is a fully responsive web app built with MERN stack. The app simplifies a job hiring process to simple steps of job post creation. Job posts are automatically matches to the right candidates.",
+				"implementation": [
+					"React with multiple dependencies such as React Router",
+					"Node.js with Express server",
+					"Atlas MongoDB",
+					"Passport.js and Google OAuth",
+					"Stripe for payments"
+				],
+				"link": "https://protected-escarpment-75476.herokuapp.com",
+				"imageId": "recruiterra",
+				"github": "https://github.com/serCJm/recruiterra"
+			},
+			{
+				"title": "The Agency",
+				"description": "The Agency is a stylish, responsive website for a digital agency. It's built with Gatsby featuring very fast loading and animations.",
+				"implementation": ["Gatsby", "Typescript"],
+				"link": "https://serbaydigital.com",
+				"imageId": "serbay-digital"
+			},
+			{
+				"title": "React Admin Dashboard",
+				"description": "Admin Dashboard is a fully responsive web app with a variety of React UI components that can be used for various admin dashboard purposes. It includes beautiful custom React components such as navigation, sidebar, toggle panels, blog posts, pricing tables, an invoice, and D3 charts.",
+				"implementation": [
+					"Built entirely with React",
+					"Used create-react-app set up",
+					"Styling is done with SASS",
+					"Charts are built with D3"
+				],
+				"link": "https://react-admin-dashboard.surge.sh/",
+				"imageId": "react-admin-dashboard",
+				"github": "https://github.com/serCJm/react-admin-dashboard"
+			},
+			{
+				"title": "Webstore Price Compare",
+				"description": "Webstore price compare is a responsive web app that allows a user to check and compare prices on Walmart and eBay US. Fetch API is used client-side to send AJAX requests. Node.js (bare, no Express) routing is used to hide API keys and retrieve requested data.",
+				"implementation": [
+					"Node.js server without frameworks",
+					"Pure JavaScript",
+					"Fetch API AJAX requests",
+					"Styling is done with SASS"
+				],
+				"link": "https://webstore-compare.herokuapp.com/",
+				"imageId": "webstore-compare",
+				"github": "https://github.com/serCJm/webstore-compare"
+			},
+			{
+				"title": "Cryptocurrency Price Checker",
+				"description": "Crypto price checker is a convenient one-page app that allows you to check all major cryptocurrency prices in BTC, ETH, and USD. All data is based on Cryptocompare's web API.",
+				"implementation": [
+					"Pure JavaScript",
+					"AJAX requests",
+					"Flexbox"
+				],
+				"link": "https://crypto-price-checker.surge.sh/",
+				"imageId": "crypto-price-checker",
+				"github": "https://github.com/serCJm/crypto-price-checker"
+			}
+		]
+	}
+]
