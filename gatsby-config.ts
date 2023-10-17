@@ -2,6 +2,7 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
 	siteMetadata: {
+		siteUrl: `https://www.serbay.dev`,
 		title: `CJ Moro Portfolio`,
 		description: `CJ Moro Front-End Web Developer Personal Portfolio`,
 		author: `CJ Moro`,
@@ -49,7 +50,7 @@ const config: GatsbyConfig = {
 				icon: `src/images/favicon.png`, // This path is relative to the root of the site.
 			},
 		},
-
+		`gatsby-plugin-offline`
 	],
 };
 
